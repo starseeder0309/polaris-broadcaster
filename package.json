@@ -2,13 +2,13 @@
   "name": "polaris-broadcaster",
   "description": "This is a project created to learn microservices, providing a video streaming service.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/kimhyeonu/polaris-broadcaster.git",
   "author": "kimhyeonu <polaris@byeolmuri.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
