@@ -5,14 +5,15 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
-const PORT = process.env.PORT;
-// 환경변수를 설정하지 않았다면 오류를 발생시킨다.
-// 지정되지 않으 경우 기본 값을 사용하도록 구성할 수도 있다.
-if (!PORT) {
-  throw new Error(
-    'HTTP 서버 구동을 위한 PORT 환경변수 설정이 존재하지 않습니다.'
-  );
-}
+const PORT = 3000;
+// const PORT = process.env.PORT;
+// // 환경변수를 설정하지 않았다면 오류를 발생시킨다.
+// // 지정되지 않으 경우 기본 값을 사용하도록 구성할 수도 있다.
+// if (!PORT) {
+//   throw new Error(
+//     'HTTP 서버 구동을 위한 PORT 환경변수 설정이 존재하지 않습니다.'
+//   );
+// }
 
 app.get('/video', (req, res) => {
   const filePath = './assets/video/SampleVideo_1280x720_30mb.mp4';
