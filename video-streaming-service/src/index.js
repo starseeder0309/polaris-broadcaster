@@ -21,7 +21,7 @@ app.get('/video', (req, res) => {
 
   fs.stat(filePath, (err, stats) => {
     if (err) {
-      console.error('오류가 발생했습니다.');
+      console.error(`오류가 발생했습니다 : ${err.message}`);
       res.sendStatus(500);
       return;
     }
